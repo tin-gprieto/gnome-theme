@@ -1,0 +1,56 @@
+;; **
+;; ** Widgets config for EWW
+;; ** Created by : @adi1090x
+;; ** Converted by : @tripleo1
+;; **
+
+;; ** Widgets *************************************************************************
+
+;; system
+(include "widgets/system.yuck")
+
+;; clock
+(include "widgets/clock.yuck")
+
+
+;; power buttons
+(include "widgets/panel.yuck")
+
+;; folders
+(include "widgets/folders.yuck")
+
+
+;; **** Sidebar Window ************************************
+
+(defwindow sidebar :stacking "fg"
+				  :focusable "false"
+				  :screen 1
+				  :windowtype "dock"
+	    		  :geometry (geometry   :x 0
+	    								:y 0
+	    								:anchor "center right")
+	(box :orientation "v"
+		 :space-evenly false
+		 :halign "center"
+
+		(box :orientation "v"
+			 :space-evenly false
+			
+			(box :height 170
+					(clock))
+		
+			(box :height 300
+					(system))
+
+			(box :height 470
+					(folders))
+		)
+
+		(box :orientation "h"
+				:space-evenly false
+			(panel)
+		)		
+	)
+)
+
+;; *********************************************************

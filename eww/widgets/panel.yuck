@@ -1,0 +1,17 @@
+(defwidget panel [] 
+	(box :orientation "h"
+		 :space-evenly false
+		(box :class "genwin" :vexpand "false" :hexpand "false" :width 95 :height 95
+			(button :class "btn_logout" :onclick "openbox --exit" ""))
+
+		(box :class "genwin" :vexpand "false" :hexpand "false" :width 95 :height 95
+			(button :class "btn_sleep" :onclick "systemctl suspend" ""))
+
+		(box :class "genwin" :vexpand "false" :hexpand "false" :width 95 :height 95
+			(button :class "btn_reboot" :onclick "systemctl reboot" ""))
+
+		(box :class "genwin" :vexpand "false" :hexpand "false" :width 95 :height 95
+			(button :class "btn_poweroff" :onclick "systemctl poweroff" ""))
+	)
+
+)
