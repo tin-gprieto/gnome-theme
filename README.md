@@ -59,6 +59,23 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 
 ## GTK Theme
 
+### Dracula Icon Pack (default)
+(https://github.com/m4thewz/dracula-icons.git)
+
+        $ git clone https://github.com/m4thewz/dracula-icons.git
+        $ sudo mv dracula-icons /usr/share/icons/
+
+### Tela Icon Pack 
+(https://github.com/vinceliuice/Tela-icon-theme)
+
+        $ git clone https://github.com/vinceliuice/Tela-icon-theme
+        $ sudo ./Tela-icon-theme/install.sh
+
+### Afterglor-cursors
+
+        $ git clone https://github.com/yeyushengfan258/Afterglow-Cursors.git 
+        $ sudo ./Afterglow-Cursors/install.sh
+
 ### TokyoNight Theme
 
 - theme
@@ -82,24 +99,7 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 
         $ dconf load /org/gnome/desktop/ < gtk-theme/gnome-shell-config/org-gnome-desktop.conf
         $ dconf load /org/gnome/shell/ < gtk-theme/gnome-shell-config/org-gnome-shell.conf
-
-### Dracula Icon Pack (default)
-(https://github.com/m4thewz/dracula-icons.git)
-
-        $ git clone https://github.com/m4thewz/dracula-icons.git
-        $ sudo mv dracula-icons /usr/share/icons/
-
-### Tela Icon Pack 
-(https://github.com/vinceliuice/Tela-icon-theme)
-
-        $ git clone https://github.com/vinceliuice/Tela-icon-theme
-        $ sudo ./Tela-icon-theme/install.sh
-
-### Afterglor-cursors
-
-        $ git clone https://github.com/yeyushengfan258/Afterglow-Cursors.git 
-        $ sudo ./Afterglow-Cursors/install.sh
-
+        
 ### findex --opcional (searcher)
         
         $ sudo apt install libkeybinder-3.0-dev
@@ -112,7 +112,7 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 ### eww --opcional (conky alternative)
 
         --FALTA--
-        
+
 ---------------------------------------------------------
 
 ## GRUB (optional)
