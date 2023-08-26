@@ -22,7 +22,6 @@ configuration file: ~/.zshrc
 
 - Ohmyzsh
 
-        $ sudo apt install curl -y
         $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 - MesloLGS Font (recurired for powerlevel10k)
