@@ -2,11 +2,11 @@
 
 Table of Contents
 
--[Terminal](#terminal)
-  -[ZSH](#zhs)
-  -[ZSH Theme](#zsh-theme)
-  -[Color scheme](#color-scheme)
--[GTK Theme](#gtk-theme)
+[Terminal](#terminal)
+[ZSH](#zsh)
+[ZSH Theme](#zsh-theme)
+[Color scheme](#color-scheme)
+[GTK Theme](#gtk-theme)
 
 ## Requirements
 
