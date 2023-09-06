@@ -1,4 +1,13 @@
 # GNOME theme (44.2 version) - Ubuntu 23.04
+
+Table of Contents
+
+-[Terminal](#terminal)
+        -[ZSH](#zhs)
+        -[ZSH Theme](#zsh-theme)
+        -[Color scheme](#color-scheme)
+-[GTK Theme](#gtk-theme)
+
 ## Requirements
 
         $ sudo apt install gnome-tweaks gnome-extensions-app git curl rsync flatpak -y
@@ -49,7 +58,7 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 
         $ cp terminal/.zshrc ~/
 
-### Terminal theme
+### Color scheme
 
         $ sudo apt-get install dconf-cli uuid-runtime
         $ bash -c "$(wget -qO- https://git.io/vQgMr)"
