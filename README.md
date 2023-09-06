@@ -23,7 +23,7 @@ Table of Contents
         sudo apt install zsh -y
         chsh -s $(which zsh)
         
-        logout and open terminal:
+logout and open terminal:
         
         Select => (2)  Populate your ~/.zshrc with the configuration recommended by the system administrator and exit (you will need to edit the file by hand, if so desired).
 
