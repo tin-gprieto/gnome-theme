@@ -2,11 +2,13 @@
 
 Table of Contents
 
-[Terminal](#terminal)
-[ZSH](#zsh)
-[ZSH Theme](#zsh-theme)
-[Color scheme](#color-scheme)
-[GTK Theme](#gtk-theme)
+- [Terminal](#terminal)
+  - [ZSH](#zsh)
+  - [ZSH Theme](#zsh-theme)
+  - [Color scheme](#color-scheme)
+- [GTK Theme](#gtk-theme)
+- [GRUB](#grub)
+- [Programs](#programs)
 
 ## Requirements
 
@@ -123,7 +125,7 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 
 ---------------------------------------------------------
 
-## GRUB (optional)
+## GRUB
 ### Grub Customizer
 
         sudo add-apt-repository ppa:danielrichter2007/grub-customizer
@@ -137,7 +139,7 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 
 ---------------------------------------------------------
 
-## Programas (snap store)
+## Programs
 
 - python
   
