@@ -22,9 +22,9 @@ Table of Contents
 
         sudo apt install zsh -y
         chsh -s $(which zsh)
-        
+
 logout and open terminal:
-        
+
         Select => (2)  Populate your ~/.zshrc with the configuration recommended by the system administrator and exit (you will need to edit the file by hand, if so desired).
 
 ### ZSH Theme
@@ -38,14 +38,15 @@ configuration file: ~/.zshrc
 - MesloLGS Font (recurired for powerlevel10k)
 
 https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+
 (preferences - GNOME Terminal)
 
 - Powerlevel10k
 
         git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-        nvim ~/.zshrc 
-        
+(en ~/.zshrc)
+
         ZSH_THEME="powerlevel10k/powerlevel10k"
 
 - Autosuggestions
@@ -70,12 +71,14 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 ## GTK Theme
 
 ### Dracula Icon Pack (default)
+
 (https://github.com/m4thewz/dracula-icons.git)
 
         git clone https://github.com/m4thewz/dracula-icons.git
         sudo mv dracula-icons /usr/share/icons/
 
-### Tela Icon Pack 
+### Tela Icon Pack
+
 (https://github.com/vinceliuice/Tela-icon-theme)
 
         git clone https://github.com/vinceliuice/Tela-icon-theme
@@ -92,7 +95,6 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 (https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git)
 
         rsync -av gtk-theme/themes/.themes ~
-        (check) ls -al ~/.themes
         ln -s ~/.themes/Tokyonight-Dark-BL/gtk-4.0/assets ~/.config/gtk-4.0
         ln -s ~/.themes/Tokyonight-Dark-BL/gtk-4.0/gtk.css ~/.config/gtk-4.0
         ln -s ~/.themes/Tokyonight-Dark-BL/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0
@@ -100,18 +102,25 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
         sudo flatpak override --filesystem=xdg-config/gtk-4.0
         flatpak override --user --filesystem=xdg-config/gtk-4.0
 
+(check)
+
+        ls -al ~/.themes
+
 - extentions
-        
+
         rsync -av gtk-theme/gnome-extensions/.local ~
-        (check) $ls -al ~/.local/share/gnome-shell/extensions/
+
+(check)
+
+        ls -al ~/.local/share/gnome-shell/extensions/
 
 - gnome-shell-config
 
         dconf load /org/gnome/desktop/ < gtk-theme/gnome-shell-config/org-gnome-desktop.conf
         dconf load /org/gnome/shell/ < gtk-theme/gnome-shell-config/org-gnome-shell.conf
-        
+
 ### findex --opcional (searcher)
-        
+
         sudo apt install libkeybinder-3.0-dev
         sudo apt-get install libgtk-3-dev
         git clone https://github.com/mdgaziur/findex
@@ -126,6 +135,7 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 ---------------------------------------------------------
 
 ## GRUB
+
 ### Grub Customizer
 
         sudo add-apt-repository ppa:danielrichter2007/grub-customizer
@@ -141,33 +151,43 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 
 ## Programs
 
+- C libs
+
+        sudo apt install build-essential nasm gdb wget &&
+        sudo apt install libcriterion-dev &&
+        sudo apt install gcc-multilib -y
+
 - python
   
-        sudo apt install python3 python3-venv python3-pip
+        sudo apt install python3 python3-venv python3-pip -y
 
 - valdrind
   
-        sudo apt install valgrind
+        sudo apt install valgrind -y
 
 - valgreen (reversión de valdrind)
   
-        pip3 install valgreen
+        pip3 install valgreen -y
+
+- gdb-dashboard
+
+        wget -P ~ https://git.io/.gdbinit 
 
 - htop
   
-        sudo snap install htop
+        sudo snap install htop -y
 
 - neofetch
   
-        sudo apt install neofetch
+        sudo apt install neofetch -y
 
 - LibreOffice
 
-        sudo snap install libreoffice
+        sudo snap install libreoffice -y
 
 - solaar (Logitech)
 
-        sudo apt install solaar
+        sudo apt install solaar -y
 
 - mdless --opcional (visualizador de MarkDown ) (https://brettterpstra.com/2015/08/21/mdless-better-markdown-in-terminal/)
 
