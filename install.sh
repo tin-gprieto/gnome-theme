@@ -3,11 +3,14 @@ reset
 
 sudo apt install  zsh  git curl rsync flatpak dconf-cli uuid-runtime build-essential nasm gdb wget valgrind neofetch -y
 sudo apt install libcriterion-dev gcc-multilib python3 python3-venv python3-pip -y
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 sudo apt install grub-customizer gnome-tweaks gnome-extensions-app solaar -y
 sudo snap install spotify discord zoom-client code --classic
 pip3 install valgreen -y
 sudo snap install htop -y
 wget -P ~ https://git.io/.gdbinit
+
+sudo apt update
 
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -36,8 +39,6 @@ rsync -av gtk-theme/gnome-extensions/.local ~
 dconf load /org/gnome/desktop/ < gtk-theme/gnome-shell-config/org-gnome-desktop.conf
 dconf load /org/gnome/shell/ < gtk-theme/gnome-shell-config/org-gnome-shell.conf
 
-sudo add-apt-repository ppa:danielrichter2007/grub-customizer
-sudo apt update
 git clone https://github.com/vinceliuice/grub2-themes
 sudo ./grub2-themes/install.sh -b -t vimix -i white
 
