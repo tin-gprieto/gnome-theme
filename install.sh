@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 reset
 
-sudo apt install grub-customizer zsh gnome-tweaks gnome-extensions-app git curl rsync flatpak dconf-cli uuid-runtime  build-essential nasm gdb wget libcriterion-dev gcc-multilib python3 python3-venv python3-pip valgrind neofetch solaar -y
+sudo apt install  zsh  git curl rsync flatpak dconf-cli uuid-runtime build-essential nasm gdb wget valgrind neofetch -y
+sudo apt install libcriterion-dev gcc-multilib python3 python3-venv python3-pip -y
+sudo apt install grub-customizer gnome-tweaks gnome-extensions-app solaar -y
+sudo snap install spotify discord zoom-client code --classic
 pip3 install valgreen -y
 sudo snap install htop -y
 wget -P ~ https://git.io/.gdbinit
