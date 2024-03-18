@@ -97,6 +97,7 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 - theme
 (https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git)
 
+        mkdir ~/.themes
         rsync -av gtk-theme/themes/.themes ~
         ln -s ~/.themes/Tokyonight-Dark-BL/gtk-4.0/assets ~/.config/gtk-4.0
         ln -s ~/.themes/Tokyonight-Dark-BL/gtk-4.0/gtk.css ~/.config/gtk-4.0
