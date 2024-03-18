@@ -1,4 +1,4 @@
-# GNOME theme (44.2 version) - Ubuntu 23.04
+# GNOME theme
 
 Table of Contents
 
@@ -12,7 +12,10 @@ Table of Contents
 
 ## Requirements
 
-        sudo apt install gnome-tweaks gnome-extensions-app git curl rsync flatpak -y
+        - APT - package manager
+        - GNOME version > 44.2
+
+        sudo apt install gnome-tweaks gnome-extensions-app git curl rsync flatpak wget -y
 
 ---------------------------------------------------------
 
@@ -151,15 +154,56 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 
 ## Programs
 
+- SSH key for github
+
+        ssh-keygen -t ed25519 -C "your_email@example.com"
+        eval "$(ssh-agent -s)"
+        ssh-add ~/.ssh/id_ed25519
+        cat ~/.ssh/id_ed25519.pub
+
+Then select and copy the contents of the id_ed25519.pub file displayed in the terminal to your clipboard
+
 - C libs
 
-        sudo apt install build-essential nasm gdb wget &&
-        sudo apt install libcriterion-dev &&
-        sudo apt install gcc-multilib -y
+        sudo apt install make gcc nasm gdb build-essential libcriterion-dev gcc-multilib clang clang-format libbsd-dev libc6-dev linux-libc-dev -y
+
+- QEMU
+
+        sudo apt install seabios qemu-system-x86 -y
 
 - python
   
         sudo apt install python3 python3-venv python3-pip -y
+
+- rust
+
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+- docker
+
+Add Docker's official GPG key:
+
+        sudo apt-get update
+        sudo apt-get install ca-certificates curl
+        sudo install -m 0755 -d /etc/apt/keyrings
+        sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+        sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+Add the repository to Apt sources:
+
+        echo \
+        "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+        $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+        sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+        sudo apt-get update
+
+Install the Docker packages
+
+        sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+Verify that the Docker Engine installation is successful by running the hello-world image.
+
+        sudo docker run hello-world
 
 - valdrind
   
@@ -201,6 +245,17 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
         sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+- Visual Studio Code
+
+        sudo apt-get install wget gpg
+        wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+        sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+        sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+        rm -f packages.microsoft.gpg
+
+        sudo apt install apt-transport-https
+        sudo apt update
+        sudo apt install code
 
 ### Snap Store
 
