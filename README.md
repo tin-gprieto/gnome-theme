@@ -12,8 +12,8 @@ Table of Contents
 
 ## Requirements
 
-        - APT - package manager
-        - GNOME version > 44.2
+- APT - package manager
+- GNOME version > 44.2
 
         sudo apt install gnome-tweaks gnome-extensions-app git curl rsync flatpak wget -y
 
