@@ -40,7 +40,7 @@ configuration file: ~/.zshrc
 
 - MesloLGS Font (recurired for powerlevel10k)
 
-https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+<https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf>
 
 (preferences - GNOME Terminal)
 
@@ -75,14 +75,14 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 
 ### Dracula Icon Pack (default)
 
-(https://github.com/m4thewz/dracula-icons.git)
+(<https://github.com/m4thewz/dracula-icons.git>)
 
         git clone https://github.com/m4thewz/dracula-icons.git
         sudo mv dracula-icons /usr/share/icons/
 
 ### Tela Icon Pack
 
-(https://github.com/vinceliuice/Tela-icon-theme)
+(<https://github.com/vinceliuice/Tela-icon-theme>)
 
         git clone https://github.com/vinceliuice/Tela-icon-theme
         sudo ./Tela-icon-theme/install.sh
@@ -94,8 +94,7 @@ https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.t
 
 ### TokyoNight Theme
 
-- theme
-(https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git)
+- theme (<https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git>)
 
         mkdir ~/.themes
         rsync -av gtk-theme/themes/.themes ~
@@ -234,7 +233,7 @@ Verify that the Docker Engine installation is successful by running the hello-wo
 
         sudo apt install solaar -y
 
-- mdless --opcional (visualizador de MarkDown ) (https://brettterpstra.com/2015/08/21/mdless-better-markdown-in-terminal/)
+- mdless --opcional (visualizador de MarkDown ) (<https://brettterpstra.com/2015/08/21/mdless-better-markdown-in-terminal/>)
 
         sudo apt install ruby
         git clone https://github.com/rubygems/rubygems
