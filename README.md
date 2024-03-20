@@ -276,7 +276,7 @@ Verify that the Docker Engine installation is successful by running the hello-wo
 
         sudo docker run hello-world
 
-- valdrind
+- valgrind
   
         sudo apt install valgrind -y
 
