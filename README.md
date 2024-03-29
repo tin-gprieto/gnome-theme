@@ -166,6 +166,8 @@ Install
 Extras
 
   - [panel-corners@aunetx](https://github.com/aunetx/panel-corners.git)
+  - [spotify-controller@koolskateguy89](https://github.com/koolskateguy89/gnome-shell-extension-spotify-controller)
+  - [spotify-tray@esenliyim](https://github.com/esenliyim/sp-tray)
 
 Install
 
