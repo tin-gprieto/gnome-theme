@@ -63,7 +63,7 @@ Add plugins
 
         cp terminal/.zshrc ~/
 
-### Color scheme
+### [Gogh](https://gogh-co.github.io/Gogh/) - Color scheme
 
         sudo apt-get install dconf-cli uuid-runtime
         bash -c "$(wget -qO- https://git.io/vQgMr)"
