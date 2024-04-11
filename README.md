@@ -294,7 +294,7 @@ Verify that the Docker Engine installation is successful by running the hello-wo
 
 - valgreen (valdrind improvement)
   
-        pip3 install valgreen -y
+        pip3 install valgreen
 
 - gdb-dashboard
 
