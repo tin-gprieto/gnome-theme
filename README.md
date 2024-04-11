@@ -2,19 +2,32 @@
 
 Table of Contents
 
-- [Terminal](#terminal)
-  - [ZSH](#zsh)
-  - [ZSH Theme](#zsh-theme)
-  - [Color scheme](#color-scheme)
-- [Themes](#themes)
-- [Icons and cursors](#icons-and-cursors)
-- [Extentions](#extentions)
-- [GRUB](#grub)
-- [Programs](#programs)
-  - [SSH key](#ssh-key) 
-  - [Programming](#programming)
-  - [User Apps](#user-apps)
-  - [Snap Store](#snap-store)
+- [GNOME theme](#gnome-theme)
+  - [Requirements](#requirements)
+  - [Terminal](#terminal)
+    - [ZSH](#zsh)
+    - [ZSH Theme](#zsh-theme)
+    - [Gogh - Color scheme](#gogh---color-scheme)
+  - [Themes](#themes)
+    - [TokyoNight Theme](#tokyonight-theme)
+    - [Qogir theme](#qogir-theme)
+  - [Icons and cursors](#icons-and-cursors)
+    - [Dracula Icon Pack](#dracula-icon-pack)
+    - [Tela Icon Pack](#tela-icon-pack)
+    - [WhiteSur Icon Theme](#whitesur-icon-theme)
+    - [Afterglor-cursors](#afterglor-cursors)
+  - [Extentions](#extentions)
+    - [gnome-shell-config](#gnome-shell-config)
+    - [findex --opcional (searcher)](#findex---opcional-searcher)
+    - [eww --opcional (conky alternative)](#eww---opcional-conky-alternative)
+  - [GRUB](#grub)
+    - [Grub Customizer](#grub-customizer)
+    - [Grub Theme](#grub-theme)
+  - [Programs](#programs)
+    - [SSH key](#ssh-key)
+    - [Programming](#programming)
+    - [User Apps](#user-apps)
+    - [Snap Store](#snap-store)
 
 ## Requirements
 
@@ -75,7 +88,7 @@ Add plugins
 ### [TokyoNight Theme](<https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme.git>)
 
         mkdir ~/.themes
-        rsync -av gtk-theme/themes/.themes ~
+        rsync -av theme/themes/.themes ~
         ln -s ~/.themes/Tokyonight-Dark-BL/gtk-4.0/assets ~/.config/gtk-4.0
         ln -s ~/.themes/Tokyonight-Dark-BL/gtk-4.0/gtk.css ~/.config/gtk-4.0
         ln -s ~/.themes/Tokyonight-Dark-BL/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0
@@ -151,27 +164,24 @@ Install
 
 ## Extentions
 
-  - [CoverflowAltTab@palatis.blogspot.com](<https://github.com/dsheeler/CoverflowAltTab.git>)
-  - [Vitals@CoreCoding.com](<https://github.com/corecoding/Vitals.git>)
-  - [appindicatorsupport@rgcjonas.gmail.com](https://github.com/ubuntu/gnome-shell-extension-appindicator.git)
-  - [blur-my-shell@aunetx](https://github.com/aunetx/blur-my-shell.git)
-  - [dash-to-panel@jderose9.github.com](https://github.com/home-sweet-gnome/dash-to-panel.git)
-  - [forge@jmmaranan.com](https://github.com/forge-ext/forge.git)
-  - [gsconnect@andyholmes.github.io](https://github.com/GSConnect/gnome-shell-extension-gsconnect.git)
-  - [just-perfection-desktop@just-perfection](https://gitlab.gnome.org/jrahmatzadeh/just-perfection.git)
-  - [quick-settings-tweaks@qwreey](https://github.com/qwreey/quick-settings-tweaks.git)
-  - [space-bar@luchrioh](https://github.com/christopher-l/space-bar)
-  - [user-theme@gnome-shell-extensions.gcampax.github.com](https://gitlab.gnome.org/GNOME/gnome-shell-extensions)
-
-Extras
-
-  - [panel-corners@aunetx](https://github.com/aunetx/panel-corners.git)
-  - [spotify-controller@koolskateguy89](https://github.com/koolskateguy89/gnome-shell-extension-spotify-controller)
-  - [spotify-tray@esenliyim](https://github.com/esenliyim/sp-tray)
+- [CoverflowAltTab@palatis.blogspot.com](<https://github.com/dsheeler/CoverflowAltTab.git>)
+- [Vitals@CoreCoding.com](<https://github.com/corecoding/Vitals.git>)
+- [appindicatorsupport@rgcjonas.gmail.com](https://github.com/ubuntu/gnome-shell-extension-appindicator.git)
+- [blur-my-shell@aunetx](https://github.com/aunetx/blur-my-shell.git)
+- [dash-to-panel@jderose9.github.com](https://github.com/home-sweet-gnome/dash-to-panel.git)
+- [forge@jmmaranan.com](https://github.com/forge-ext/forge.git)
+- [gsconnect@andyholmes.github.io](https://github.com/GSConnect/gnome-shell-extension-gsconnect.git)
+- [just-perfection-desktop@just-perfection](https://gitlab.gnome.org/jrahmatzadeh/just-perfection.git)
+- [space-bar@luchrioh](https://github.com/christopher-l/space-bar)
+- [user-theme@gnome-shell-extensions.gcampax.github.com](https://gitlab.gnome.org/GNOME/gnome-shell-extensions)
+- [quick-settings-tweaks@qwreey](https://github.com/qwreey/quick-settings-tweaks.git)
+- [panel-corners@aunetx](https://github.com/aunetx/panel-corners.git)
+- [spotify-controller@koolskateguy89](https://github.com/koolskateguy89/gnome-shell-extension-spotify-controller)
+- [spotify-tray@esenliyim](https://github.com/esenliyim/sp-tray)
 
 Install
 
-        rsync -av gtk-theme/gnome-extensions/.local ~
+        rsync -av theme/gnome-extensions/.local ~
 
 (check)
 
@@ -179,8 +189,8 @@ Install
 
 ### gnome-shell-config
 
-        dconf load /org/gnome/desktop/ < gtk-theme/gnome-shell-config/org-gnome-desktop.conf
-        dconf load /org/gnome/shell/ < gtk-theme/gnome-shell-config/org-gnome-shell.conf
+        dconf load /org/gnome/desktop/ < theme/gnome-shell-config/org-gnome-desktop.conf
+        dconf load /org/gnome/shell/ < theme/gnome-shell-config/org-gnome-shell.conf
 
 ### findex --opcional (searcher)
 
