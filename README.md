@@ -225,7 +225,7 @@ Install
     -g, --generate  do not install but generate theme into chosen directory       (must add your directory)
     -h, --help      Show this help
 
-Default 
+Default
 
         sudo ./grub2-themes/install.sh -b -t vimix -i white
 
@@ -233,7 +233,7 @@ Default
 
 ## Programs
 
-### SSH key 
+### SSH key
 
         ssh-keygen -t ed25519 -C "your_email@example.com"
         eval "$(ssh-agent -s)"
@@ -246,7 +246,7 @@ Then select and copy the contents of the id_ed25519.pub file displayed in the te
 
 ### Programming
 
-- C 
+- C
 
         sudo apt install make gcc nasm gdb build-essential libcriterion-dev gcc-multilib clang clang-format libbsd-dev libc6-dev linux-libc-dev -y
 
