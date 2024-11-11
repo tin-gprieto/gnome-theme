@@ -88,7 +88,7 @@ plugins=(
 alias update='sudo apt update'
 alias upgrade='sudo apt upgrade -y'
 alias autoremove='sudo apt autoremove'
-alias zsh='nvim ~/.zshrc'
+alias zsh='nano ~/.zshrc'
 
 source $ZSH/oh-my-zsh.sh
 
