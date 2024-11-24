@@ -356,3 +356,9 @@ Verify that the Docker Engine installation is successful by running the hello-wo
 - **File manager**: Nautilus
 
 ---------------------------------------------------------
+
+FALTA
+
+Quitar addons de spotify y reemplazar por https://github.com/Sonath21/spotify-controls
+
+
